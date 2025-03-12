@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Ash Dodd Resume</title>
+    <link rel="stylesheet" href="/styles/purrfectly-brewed.css">
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><h1>Purrfectly Brewed</h1></a>
+        <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="owner.html">About The Owner</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <div class="center">
+        <div class="raise-on-hover">
+            <div class="intro">
+                <h1>Ash Dodd</h1>
+                <a href="mailto:example@domain.com" class="contact-link"> ashdodd@uoregon.edu </a>
+                <p>
+                541-XXX-XXXX
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="raise-on-hover">
+            <div class="card">
+                <h2>Objective</h2>
+                <p>Current Psychology major. Looking for a part-time job to build up my skills.</p>
+            </div>
+        </div>
+        <div class="raise-on-hover">
+            <div class="card">
+                <h2>Education</h2>
+                <h3>BA in Psychology at University of Oregon</h3>
+                <p>Expected Graduation: June 2028</p>
+                <ul>
+                    <li>Relevant Courses: Psychology 202z, Psychology 201z, Japanese 101, Japanese 102</li>
+                    <li>GPA: 3.56</li>
+                </ul>
+            </div>
+        </div>
+        <div class="raise-on-hover">
+            <div class="card">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Attention to Detail</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+        <div class="raise-on-hover">
+            <div class="card">
+                <h2>Projects</h2>
+                <h3>Modding</h3>
+                <p>Created a mod for a video game that alters in game text using HTML.</p>
+            </div>
+        </div>
+        <div class="raise-on-hover">
+            <div class="card">
+                <h2>Experience</h2>
+                <h3>Chuck E. Cheese</h3>
+                <p>Chuck E. Cheese 1983-1987</p>
+                <ul>
+                    <li>Assisted in bringing a welcoming attitude to guests.</li>
+                    <li>Assisted in cleaning and other busy tasks.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="raise-on-hover">
+            <div class="card">
+                <h2>Extracurricular Activities</h2>
+                <ul>
+                    <li>Girl Scouts 2014-2018</li>
+                    <li><a href="https://sheltercare.org/what-we-do/">Volunteer Work, ShelterCare</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contact" class="directory">
+            <button>Call Us</button>
+            <button>Email Us</button>
+            <button>Adopt</button>
+            <button>Reservations</button> <br>
+            <button>Employment</button>
+            <button>Volunteer</button>
+            <button>FAQ</button>
+            <button>Directions</button>
+            <button onclick="document.getElementById('signup-form').style.display='block'">Join Our Newsletter</button>
+            <div id="signup-form" class="form-popup" style="display: none;">
+                <form class="form-container">
+                    <h2>Sign Up for Our Newsletter!</h2>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+                </form>
+            </div>
+        </div>
+        <p>All images belong to Ash Dodd, 2025</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,254 @@
+html {
+    height: 100%;
+    background: url("/images/bg.png") center center fixed;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.cafe-photos {
+    display:block;  
+}
+
+.info {
+    max-width: 800px;
+    /* width: 100%;     */
+    display:inline-flex;
+    background-color:#8f5316ac;
+    padding:10px;
+}
+
+.reviews {
+    display:grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    padding: 2%;
+    align-items: center;
+}
+
+.directory {
+    background-color: #804f13;
+    margin-top: auto;
+}
+
+/* .dark-brown {
+    background-color:#543816;
+    width: 100%;
+}
+
+.light-brown {
+    background-color:#804f13;
+    width: 100%;
+} */
+
+.story {
+    width: 50%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px;
+    display:block;
+    background-color: #a3661c;
+    border-radius: 10px;
+}
+
+.mission {
+    max-width: 400px;
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    display:block;
+    border-radius: 10px;
+    background-color: #ba7522;
+}
+
+.item1 {
+    grid-row: 1/4;
+    grid-column: 2/10;
+    background-color: #ba7522;
+    padding: 10px;
+    border: 2px solid black; 
+}
+
+.item2 {
+    grid-row: 4/13;
+    grid-column: 2/5;
+    background-color: #a3661c;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black; 
+}
+
+.item3 {
+    grid-row: 5/13;
+    grid-column: 7/10;
+    background-color: #804f13;
+    padding: 20px;
+    border: 2px solid black; 
+} 
+
+button {
+    background-color: #ba7522;
+    outline: black;
+    padding: 2px;
+    margin: 2px;
+}
+
+button a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        height: 100%;
+    }
+    .info {
+        padding:0%;
+    }
+}
+
+footer {
+    margin-top: auto; 
+    background-color: #804f13;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #a3661c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 80%;
+    }
+
+.logo {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        }
+        .nav-links a {
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+        color: white;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+}
+@media (max-width: 768px) { 
+    .nav-links.active {
+        right: 0;
+    }
+}
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+.owner {
+    display: block;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #543816;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.card {
+    width: 50%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px;
+    display:inline-block;
+    background-color: #a3661c;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Additional styling */
+    }
+    .image-container:hover .overlay {
+    opacity: 1;
+    }
+
+img {
+    height: 200px;
+    width: 200px
+}
