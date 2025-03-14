@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Purrfectly Brewed: Eugene's Cutest Cat-Themed Cafe</title>
-    <link rel="stylesheet" href="https://dxmibby.github.io/dxmibby.portfolio/styles/purrfectly-brewed.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo"><h1>Purrfectly Brewed</h1></a>
-        <div class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="#contact">Contact Us</a>
-        <a href="owner.html">About The Owner</a>
-        </div>
-        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-    </nav>
-        
-    <div class="image-container">
-        <img src="https://dxmibby.github.io/dxmibby.portfolio/images/cohi.png" alt="A delicious cup of coffee" width="200">
-    </div>
-    <div class="overlay">A delicious cup of coffee</div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Purrfectly Brewed: Eugene's Cutest Cat-Themed Cafe</title>
+        <link rel="stylesheet" href="https://dxmibby.github.io/dxmibby.portfolio/styles/purrfectly-brewed.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><h1>Purrfectly Brewed</h1></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact Us</a>
+                <a href="owner.html">About The Owner</a>
+                <a href="resume.html">Resume</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <!-- <div class="mobile-menu-btn">
+                <a href="index.html">Test</a>
+                </div> -->
+        </nav>
 
-    <div class="light-brown">
-    <div class="info">
-        <div class="story">
-        <h2>Our Story</h2>
-        <p>Back in 2020, the owner of Purrfectly Brewed had been busy at home baking pastries when they got the idea to open their own cafe. After the pandemic hit, Ash did all they could to scavenge for money from home so they could one day open the shop of their dreams. Entranced by the existence of cats, not only did they design the tiny Eugene cafe to be themed as such, but they even went the extra mile by teaming up with a local rescue shelter to help stray cats find their forever homes.</p></div>
-        <div class="mission">
-        <h2>Our Mission</h2>
-        <p>Our mission at Purrfectly Brewed is to bring the community of cat lovers in Eugene together through every sip of coffee and every kitten we bring in.</p></div>
-    </div>
-    </div>
+        <div class="red-top"></div>
 
-    <div class="dark-brown">
-        <h2>Reviews</h2>
-    <div class="reviews">
-        <div class="item1">"Eugene's most friendliest cafe."</div>
-        <div class="item2">"Purrfectly Brewed is the cutest place in town!! I've been waiting so long for a cat cafe to be introduced in the area."</div>
-        <div class="item3">"The pastries were so good. Went here with my girlfriend and she hasn't stopped talking about the cake."</div>
-    </div>
-    </div>
-    <footer>
-        <div id="contact" class="directory">
-            <button>Call Us</button>
-            <button>Email Us</button>
-            <button>Adopt</button>
-            <button>Reservations</button> <br>
-            <button>Employment</button>
-            <button>Volunteer</button>
-            <button>FAQ</button>
-            <button>Directions</button>
-            <button onclick="document.getElementById('signup-form').style.display='block'">Join Our Newsletter</button>
-            <div id="signup-form" class="form-popup" style="display: none;">
-                <form class="form-container">
-                    <h2>Sign Up for Our Newsletter!</h2>
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn">Submit</button>
-                    <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
-                </form>
+        <div class="image-container-background">
+            <div class="center">
+                <div class="image-container">
+                    <img style="display: block" src="https://dxmibby.github.io/dxmibby.portfolio/images/cohi.png" alt="A delicious cup of coffee" width="100%" />
+                    <div class="overlay">
+                        <p>A delicious cup of coffee</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img style="display: block" src="https://dxmibby.github.io/dxmibby.portfolio/images/pastry.jpg" alt="A delicious cup of coffee" width="100%" />
+                    <div class="overlay">
+                        <p>One of our yummy pastries! Image courtesy of <a href="https://www.pexels.com/photo/croissant-on-a-decorated-plate-1510690/">Valeria Boltneva</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <p>All images belong to Ash Dodd, 2025</p>
-</footer>
-</body>
+
+        <div class="center">
+            <div class="story">
+                <div class="center">
+                    <img class="story_img" src="https://dxmibby.github.io/dxmibby.portfolio/images/cat.jpg" />
+                    <div class="story_text">
+                        <h2>Our Story</h2>
+                        <hr class="divider" />
+                        <p>Back in 2020, the owner of Purrfectly Brewed had been busy at home baking pastries when they got the idea to open their own cafe. After the pandemic hit, Ash did all they could to scavenge for money from home so they could one day open the shop of their dreams. Entranced by the existence of cats, not only did they design the tiny Eugene cafe to be themed as such, but they even went the extra mile by teaming up with a local rescue shelter to help stray cats find their forever homes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="mission">
+                <div class="center">
+                    <div class="mission_text">
+                        <h2>Our Mission</h2>
+                        <hr class="divider" />
+                        <p>Our mission at Purrfectly Brewed is to bring the community of cat lovers in Eugene together through every sip of coffee and every kitten we bring in.</p>
+                    </div>
+                    <img class="mission_img" src="https://dxmibby.github.io/dxmibby.portfolio//images/cat2.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="rev">
+                <h2>Reviews</h2>
+                <div class="reviews">
+                    <div class="item1">"Eugene's furr-iendliest cafe."</div>
+                    <div class="item2">"Purrfectly Brewed is the cutest place in town!! I've been waiting so long for a cat cafe to be introduced in the area."</div>
+                    <div class="item3">"The pastries were so good. Went here with my girlfriend and she hasn't stopped talking about the cake."</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="contact" class="directory">
+                <button>Call Us</button>
+                <button>Email Us</button>
+                <button>Adopt</button>
+                <button>Reservations</button> <br />
+                <button>Employment</button>
+                <button>Volunteer</button>
+                <button>FAQ</button>
+                <button>Directions</button>
+                <button onclick="document.getElementById('signup-form').style.display='block'">Join Our Newsletter</button>
+                <div id="signup-form" class="form-popup" style="display: none">
+                    <form class="form-container">
+                        <h2>Sign Up for Our Newsletter!</h2>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="fullname" placeholder="Enter your name" required />
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" required />
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+                    </form>
+                    
+                </div>
+                <p>All images belong to Ash Dodd, 2025</p>
+            </div>
+        </footer>
+    </body>
 </html>
